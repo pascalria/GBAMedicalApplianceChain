@@ -15,7 +15,7 @@ contract patientfile {
     Patient patient;
 
    function addpatient(uint id1,string name1,uint age1) public {
-       ///require(patientIdInStore[id1] != address(0));
+       require(patientIdInStore[id1] == address(0));
        Patient memory pt1 = patient;
        pt1.id = id1;
        pt1.name = name1;
