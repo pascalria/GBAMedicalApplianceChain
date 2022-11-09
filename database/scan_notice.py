@@ -7,3 +7,10 @@ db = pymysql.connect(
     password="123456"
     charset="utf8mb4"
 )
+
+cursor = db.cursor()
+
+scan = ""
+
+cursor.execute(scan)
+result = cursor.fetchall()
