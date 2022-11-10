@@ -14,3 +14,11 @@ INSERT INTO hospitaldb.hospital VALUES ('20220102','1101010101001111110110101011
 INSERT INTO hospitaldb.medical VALUES ('28','02','20220102'); 
 
 CREATE SCHEMA hospitaldb;
+
+SELECT patient_id FROM hospital;
+
+SELECT hospital.patient_id,hospital_addr
+FROM hospital,medical
+WHERE hospital.patient_id=medical.patient_id
+AND medid = '01'
+AND remain_time = '0';
