@@ -31,15 +31,16 @@ def store(result):
 # 创建患者数据库
 def create(db1):
     cursor = db1.cursor()
-    create1 = "CREATE TABLE 'hospital'( " \
+    create1 = "CREATE TABLE hospital( " \
               "patient_id char(8) NOT NULL PRIMARY KEY COMMENT '患者id，为8位数字', " \
               "hospital_addr BINARY(160) NOT NULL COMMENT '医院账户地址，以二进制存储' " \
               ")"
 
-    create2 = "CREATE TABLE 'medical'(" \
-              "FOREIGN KEY(patient_id) REFERENCES hospital(patient_id), " \
+    create2 = "CREATE TABLE medical(" \
               "medid char(4) NOT NULL COMMENT '药械id', " \
               "remain_time tinyint NOT NULL COMMENT '如不为0，则代表离特定时间点得时间'" \
+              "patient_id CHAR(8) COMMENT '患者id，为8位数字', " \
+              "FOREIGN KEY(patient_id) REFERENCES hospital(patient_id), " \
               ")"
 
 
