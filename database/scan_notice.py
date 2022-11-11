@@ -3,11 +3,7 @@ import pymysql
 # 接收到药械到货信息后扫描数据库寻找匹配患者
 def scan(db1, medid):
     cursor = db1.cursor()
-    scan = "SELECT hospital.patient_id,hospital_addr " \
-           "FROM hospital,medical " \
-           "WHERE hospital.patient_id=medical.patient_id " \
-           "AND medid='%s' " \
-           "AND remain_time='0'" %medid
+    scan = "select * from tb_case where medicalNeed like'%%s%%'" %medid
     cursor.execute(scan)
     result = cursor.fetchall()
     return result
