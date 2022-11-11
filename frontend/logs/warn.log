@@ -1,0 +1,490 @@
+2022-11-10 05:26:11.883 [http-bio-8080-exec-1] ERROR ConnectionManager() - connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+, cause: 拒绝连接: /127.0.0.1:20200
+2022-11-10 05:26:11.885 [http-bio-8080-exec-1] ERROR ConnectionManager() - connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+, cause: 拒绝连接: /127.0.0.1:20201
+2022-11-10 05:26:11.886 [http-bio-8080-exec-1] ERROR ConnectionManager() -  all connections have failed, [{"code":2, "msg":"connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+"}, {"code":2, "msg":"connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+"}] 
+2022-11-10 05:26:11.886 [http-bio-8080-exec-1] WARN  NetworkImp() - <==== connect nodes failed, reason:
+Failed to connect to all the nodes!
+* connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+
+* connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+
+
+2022-11-10 05:26:13.918 [http-bio-8080-exec-1] ERROR ChannelImp() - ====> init channel network error, org.fisco.bcos.sdk.network.NetworkException: 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+<==== STEP1-1: Load certificates for ecdsa context success...
+<==== connect nodes failed, reason:
+Failed to connect to all the nodes!
+* connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+
+* connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+
+
+ 
+2022-11-10 05:26:13.919 [http-bio-8080-exec-1] WARN  ChannelImp() - The channel has already been stopped!
+2022-11-10 05:27:16.641 [nioEventLoopGroup-2-1] ERROR ChannelHandler() -  handshake failed, host: 127.0.0.1, port: 20200, reason: General OpenSslEngine problem, error stack: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem 
+2022-11-10 05:27:16.641 [nioEventLoopGroup-2-2] ERROR ChannelHandler() -  handshake failed, host: 127.0.0.1, port: 20201, reason: General OpenSslEngine problem, error stack: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem 
+2022-11-10 05:27:16.642 [http-bio-8080-exec-1] ERROR ConnectionManager() - ssl handshake failed:/127.0.0.1:20200
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+2022-11-10 05:27:16.643 [http-bio-8080-exec-1] ERROR ConnectionManager() - ssl handshake failed:/127.0.0.1:20201
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+2022-11-10 05:27:16.643 [http-bio-8080-exec-1] ERROR ConnectionManager() -  all connections have failed, [{"code":1, "msg":"ssl handshake failed:/127.0.0.1:20200
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied."}, {"code":1, "msg":"ssl handshake failed:/127.0.0.1:20201
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied."}] 
+2022-11-10 05:27:16.645 [nioEventLoopGroup-2-1] WARN  DefaultChannelPipeline() - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:471) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.handshakeException(ReferenceCountedOpenSslEngine.java:1737) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.wrap(ReferenceCountedOpenSslEngine.java:777) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:519) ~[?:?]
+	at io.netty.handler.ssl.SslHandler.wrap(SslHandler.java:1071) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.wrapNonAppData(SslHandler.java:962) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1435) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:349) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:158) ~[?:?]
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:84) ~[?:?]
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:309) ~[?:?]
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:344) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+2022-11-10 05:27:16.645 [nioEventLoopGroup-2-2] WARN  DefaultChannelPipeline() - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:471) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.handshakeException(ReferenceCountedOpenSslEngine.java:1737) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.wrap(ReferenceCountedOpenSslEngine.java:777) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:519) ~[?:?]
+	at io.netty.handler.ssl.SslHandler.wrap(SslHandler.java:1071) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.wrapNonAppData(SslHandler.java:962) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1435) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:349) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:158) ~[?:?]
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:84) ~[?:?]
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:309) ~[?:?]
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:344) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+2022-11-10 05:27:18.680 [http-bio-8080-exec-1] WARN  NetworkImp() - <==== STEP2 Result: connect with sm context failed for cert missing.
+* Missed certificates: 
+[/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmca.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.crt,]
+currentPath: /home/thuwu/IdeaProjects/demo1
+----------------------------
+<====> Error: try to connect nodes with both ecdsa and sm context failed <====>
+<====>[1;31m Please refer to github issue: https://github.com/FISCO-BCOS/java-sdk/issues/536 [0m
+<====>[1;31m Please refer to fisco-docs: https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/faq/connect.html [0m
+----------------------------
+* FISCO BCOS Java SDK Version: 2.9.1
+* Support secp256k1 : true
+* Java Version : 13
+* JDK Disabled NamedCurves : null
+* JDK DisableNative Option : false
+* OS Name : Linux
+* OS Arch : amd64
+* OS Version : 5.4.0-131-generic
+* JVM Version : 13+33
+* JVM Vendor : Oracle Corporation
+* JVM Vendor URL : https://java.oracle.com/
+
+2022-11-10 05:27:18.681 [http-bio-8080-exec-1] ERROR ChannelImp() - ====> init channel network error, org.fisco.bcos.sdk.network.NetworkException: 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+<==== STEP1-1: Load certificates for ecdsa context success...
+<==== STEP1 Result: try to connect nodes with ecdsa context failed. reason:
+Failed to connect to all the nodes!
+* ssl handshake failed:/127.0.0.1:20200
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+* ssl handshake failed:/127.0.0.1:20201
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+
+----------------------------
+====> STEP2: connect nodes with ecdsa context failed, try to connect nodes with sm-context...
+<==== STEP2 Result: connect with sm context failed for cert missing.
+* Missed certificates: 
+[/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmca.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.crt,]
+currentPath: /home/thuwu/IdeaProjects/demo1
+----------------------------
+<====> Error: try to connect nodes with both ecdsa and sm context failed <====>
+<====>[1;31m Please refer to github issue: https://github.com/FISCO-BCOS/java-sdk/issues/536 [0m
+<====>[1;31m Please refer to fisco-docs: https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/faq/connect.html [0m
+----------------------------
+* FISCO BCOS Java SDK Version: 2.9.1
+* Support secp256k1 : true
+* Java Version : 13
+* JDK Disabled NamedCurves : null
+* JDK DisableNative Option : false
+* OS Name : Linux
+* OS Arch : amd64
+* OS Version : 5.4.0-131-generic
+* JVM Version : 13+33
+* JVM Vendor : Oracle Corporation
+* JVM Vendor URL : https://java.oracle.com/
+
+ 
+2022-11-10 05:27:18.681 [http-bio-8080-exec-1] WARN  ChannelImp() - The channel has already been stopped!
+2022-11-10 05:27:56.670 [nioEventLoopGroup-3-2] ERROR ChannelHandler() -  handshake failed, host: 127.0.0.1, port: 20201, reason: General OpenSslEngine problem, error stack: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem 
+2022-11-10 05:27:56.675 [nioEventLoopGroup-3-1] ERROR ChannelHandler() -  handshake failed, host: 127.0.0.1, port: 20200, reason: General OpenSslEngine problem, error stack: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem 
+2022-11-10 05:27:56.675 [http-bio-8080-exec-2] ERROR ConnectionManager() - ssl handshake failed:/127.0.0.1:20200
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+2022-11-10 05:27:56.675 [http-bio-8080-exec-2] ERROR ConnectionManager() - ssl handshake failed:/127.0.0.1:20201
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+2022-11-10 05:27:56.675 [nioEventLoopGroup-3-2] WARN  DefaultChannelPipeline() - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:471) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.handshakeException(ReferenceCountedOpenSslEngine.java:1737) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.wrap(ReferenceCountedOpenSslEngine.java:777) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:519) ~[?:?]
+	at io.netty.handler.ssl.SslHandler.wrap(SslHandler.java:1071) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.wrapNonAppData(SslHandler.java:962) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1435) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:349) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:158) ~[?:?]
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:84) ~[?:?]
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:309) ~[?:?]
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:344) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+2022-11-10 05:27:56.675 [http-bio-8080-exec-2] ERROR ConnectionManager() -  all connections have failed, [{"code":1, "msg":"ssl handshake failed:/127.0.0.1:20200
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied."}, {"code":1, "msg":"ssl handshake failed:/127.0.0.1:20201
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied."}] 
+2022-11-10 05:27:56.677 [nioEventLoopGroup-3-1] WARN  DefaultChannelPipeline() - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:471) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.handshakeException(ReferenceCountedOpenSslEngine.java:1737) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.wrap(ReferenceCountedOpenSslEngine.java:777) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:519) ~[?:?]
+	at io.netty.handler.ssl.SslHandler.wrap(SslHandler.java:1071) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.wrapNonAppData(SslHandler.java:962) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1435) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:349) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:158) ~[?:?]
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:84) ~[?:?]
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:309) ~[?:?]
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:344) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+2022-11-10 05:27:58.708 [http-bio-8080-exec-2] WARN  NetworkImp() - <==== STEP2 Result: connect with sm context failed for cert missing.
+* Missed certificates: 
+[/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmca.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.crt,]
+currentPath: /home/thuwu/IdeaProjects/demo1
+----------------------------
+<====> Error: try to connect nodes with both ecdsa and sm context failed <====>
+<====>[1;31m Please refer to github issue: https://github.com/FISCO-BCOS/java-sdk/issues/536 [0m
+<====>[1;31m Please refer to fisco-docs: https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/faq/connect.html [0m
+----------------------------
+* FISCO BCOS Java SDK Version: 2.9.1
+* Support secp256k1 : true
+* Java Version : 13
+* JDK Disabled NamedCurves : null
+* JDK DisableNative Option : false
+* OS Name : Linux
+* OS Arch : amd64
+* OS Version : 5.4.0-131-generic
+* JVM Version : 13+33
+* JVM Vendor : Oracle Corporation
+* JVM Vendor URL : https://java.oracle.com/
+
+2022-11-10 05:27:58.708 [http-bio-8080-exec-2] ERROR ChannelImp() - ====> init channel network error, org.fisco.bcos.sdk.network.NetworkException: 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+<==== STEP1-1: Load certificates for ecdsa context success...
+<==== STEP1 Result: try to connect nodes with ecdsa context failed. reason:
+Failed to connect to all the nodes!
+* ssl handshake failed:/127.0.0.1:20200
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+* ssl handshake failed:/127.0.0.1:20201
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+
+----------------------------
+====> STEP2: connect nodes with ecdsa context failed, try to connect nodes with sm-context...
+<==== STEP2 Result: connect with sm context failed for cert missing.
+* Missed certificates: 
+[/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmca.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.crt,]
+currentPath: /home/thuwu/IdeaProjects/demo1
+----------------------------
+<====> Error: try to connect nodes with both ecdsa and sm context failed <====>
+<====>[1;31m Please refer to github issue: https://github.com/FISCO-BCOS/java-sdk/issues/536 [0m
+<====>[1;31m Please refer to fisco-docs: https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/faq/connect.html [0m
+----------------------------
+* FISCO BCOS Java SDK Version: 2.9.1
+* Support secp256k1 : true
+* Java Version : 13
+* JDK Disabled NamedCurves : null
+* JDK DisableNative Option : false
+* OS Name : Linux
+* OS Arch : amd64
+* OS Version : 5.4.0-131-generic
+* JVM Version : 13+33
+* JVM Vendor : Oracle Corporation
+* JVM Vendor URL : https://java.oracle.com/
+
+ 
+2022-11-10 05:27:58.708 [http-bio-8080-exec-2] WARN  ChannelImp() - The channel has already been stopped!
+2022-11-10 06:01:35.191 [http-bio-8080-exec-1] ERROR ConnectionManager() - connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+, cause: 拒绝连接: /127.0.0.1:20200
+2022-11-10 06:01:35.192 [http-bio-8080-exec-1] ERROR ConnectionManager() - connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+, cause: 拒绝连接: /127.0.0.1:20201
+2022-11-10 06:01:35.192 [http-bio-8080-exec-1] ERROR ConnectionManager() -  all connections have failed, [{"code":2, "msg":"connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+"}, {"code":2, "msg":"connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+"}] 
+2022-11-10 06:01:35.192 [http-bio-8080-exec-1] WARN  NetworkImp() - <==== connect nodes failed, reason:
+Failed to connect to all the nodes!
+* connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+
+* connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+
+
+2022-11-10 06:01:37.215 [http-bio-8080-exec-1] ERROR ChannelImp() - ====> init channel network error, org.fisco.bcos.sdk.network.NetworkException: 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+<==== STEP1-1: Load certificates for ecdsa context success...
+<==== connect nodes failed, reason:
+Failed to connect to all the nodes!
+* connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+
+* connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+
+
+ 
+2022-11-10 06:01:37.215 [http-bio-8080-exec-1] WARN  ChannelImp() - The channel has already been stopped!

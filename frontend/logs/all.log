@@ -1,0 +1,1120 @@
+2022-11-10 05:26:11.143 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 05:26:11.337 [http-bio-8080-exec-1] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 05:26:11.337 [http-bio-8080-exec-1] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 05:26:11.338 [http-bio-8080-exec-1] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 05:26:11.373 [http-bio-8080-exec-1] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 05:26:11.883 [http-bio-8080-exec-1] ERROR ConnectionManager() - connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+, cause: 拒绝连接: /127.0.0.1:20200
+2022-11-10 05:26:11.885 [http-bio-8080-exec-1] ERROR ConnectionManager() - connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+, cause: 拒绝连接: /127.0.0.1:20201
+2022-11-10 05:26:11.886 [http-bio-8080-exec-1] ERROR ConnectionManager() -  all connections have failed, [{"code":2, "msg":"connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+"}, {"code":2, "msg":"connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+"}] 
+2022-11-10 05:26:11.886 [http-bio-8080-exec-1] WARN  NetworkImp() - <==== connect nodes failed, reason:
+Failed to connect to all the nodes!
+* connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+
+* connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+
+
+2022-11-10 05:26:13.918 [http-bio-8080-exec-1] INFO  ConnectionManager() - The netty has been stopped
+2022-11-10 05:26:13.918 [http-bio-8080-exec-1] ERROR ChannelImp() - ====> init channel network error, org.fisco.bcos.sdk.network.NetworkException: 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+<==== STEP1-1: Load certificates for ecdsa context success...
+<==== connect nodes failed, reason:
+Failed to connect to all the nodes!
+* connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+
+* connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+
+
+ 
+2022-11-10 05:26:13.919 [http-bio-8080-exec-1] WARN  ChannelImp() - The channel has already been stopped!
+2022-11-10 05:27:16.053 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 05:27:16.165 [http-bio-8080-exec-1] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 05:27:16.165 [http-bio-8080-exec-1] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 05:27:16.166 [http-bio-8080-exec-1] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 05:27:16.192 [http-bio-8080-exec-1] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 05:27:16.641 [nioEventLoopGroup-2-1] ERROR ChannelHandler() -  handshake failed, host: 127.0.0.1, port: 20200, reason: General OpenSslEngine problem, error stack: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem 
+2022-11-10 05:27:16.641 [nioEventLoopGroup-2-2] ERROR ChannelHandler() -  handshake failed, host: 127.0.0.1, port: 20201, reason: General OpenSslEngine problem, error stack: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem 
+2022-11-10 05:27:16.642 [http-bio-8080-exec-1] ERROR ConnectionManager() - ssl handshake failed:/127.0.0.1:20200
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+2022-11-10 05:27:16.643 [http-bio-8080-exec-1] ERROR ConnectionManager() - ssl handshake failed:/127.0.0.1:20201
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+2022-11-10 05:27:16.643 [http-bio-8080-exec-1] ERROR ConnectionManager() -  all connections have failed, [{"code":1, "msg":"ssl handshake failed:/127.0.0.1:20200
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied."}, {"code":1, "msg":"ssl handshake failed:/127.0.0.1:20201
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied."}] 
+2022-11-10 05:27:16.643 [http-bio-8080-exec-1] INFO  NetworkImp() - <==== STEP1 Result: try to connect nodes with ecdsa context failed. reason:
+Failed to connect to all the nodes!
+* ssl handshake failed:/127.0.0.1:20200
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+* ssl handshake failed:/127.0.0.1:20201
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+
+2022-11-10 05:27:16.645 [http-bio-8080-exec-1] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmca.crt failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:16.645 [http-bio-8080-exec-1] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.crt failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:16.646 [http-bio-8080-exec-1] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.key failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:16.647 [http-bio-8080-exec-1] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.crt failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:16.647 [http-bio-8080-exec-1] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.key failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:16.645 [nioEventLoopGroup-2-1] WARN  DefaultChannelPipeline() - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:471) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.handshakeException(ReferenceCountedOpenSslEngine.java:1737) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.wrap(ReferenceCountedOpenSslEngine.java:777) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:519) ~[?:?]
+	at io.netty.handler.ssl.SslHandler.wrap(SslHandler.java:1071) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.wrapNonAppData(SslHandler.java:962) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1435) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:349) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:158) ~[?:?]
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:84) ~[?:?]
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:309) ~[?:?]
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:344) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+2022-11-10 05:27:16.645 [nioEventLoopGroup-2-2] WARN  DefaultChannelPipeline() - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:471) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.handshakeException(ReferenceCountedOpenSslEngine.java:1737) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.wrap(ReferenceCountedOpenSslEngine.java:777) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:519) ~[?:?]
+	at io.netty.handler.ssl.SslHandler.wrap(SslHandler.java:1071) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.wrapNonAppData(SslHandler.java:962) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1435) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:349) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:158) ~[?:?]
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:84) ~[?:?]
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:309) ~[?:?]
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:344) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+2022-11-10 05:27:16.661 [nioEventLoopGroup-2-1] INFO  ChannelHandler() -  ssl close completion event, host: 127.0.0.1, port: 20200, ctx: 597470986 
+2022-11-10 05:27:16.662 [nioEventLoopGroup-2-2] INFO  ChannelHandler() -  ssl close completion event, host: 127.0.0.1, port: 20201, ctx: 826713839 
+2022-11-10 05:27:18.677 [http-bio-8080-exec-1] INFO  ConnectionManager() - The netty has been stopped
+2022-11-10 05:27:18.677 [http-bio-8080-exec-1] INFO  NetworkImp() - ----------------------------
+====> STEP2: connect nodes with ecdsa context failed, try to connect nodes with sm-context...
+2022-11-10 05:27:18.678 [http-bio-8080-exec-1] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmca.crt failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:18.678 [http-bio-8080-exec-1] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.crt failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:18.679 [http-bio-8080-exec-1] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.key failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:18.679 [http-bio-8080-exec-1] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.crt failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:18.679 [http-bio-8080-exec-1] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.key failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:18.680 [http-bio-8080-exec-1] WARN  NetworkImp() - <==== STEP2 Result: connect with sm context failed for cert missing.
+* Missed certificates: 
+[/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmca.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.crt,]
+currentPath: /home/thuwu/IdeaProjects/demo1
+----------------------------
+<====> Error: try to connect nodes with both ecdsa and sm context failed <====>
+<====>[1;31m Please refer to github issue: https://github.com/FISCO-BCOS/java-sdk/issues/536 [0m
+<====>[1;31m Please refer to fisco-docs: https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/faq/connect.html [0m
+----------------------------
+* FISCO BCOS Java SDK Version: 2.9.1
+* Support secp256k1 : true
+* Java Version : 13
+* JDK Disabled NamedCurves : null
+* JDK DisableNative Option : false
+* OS Name : Linux
+* OS Arch : amd64
+* OS Version : 5.4.0-131-generic
+* JVM Version : 13+33
+* JVM Vendor : Oracle Corporation
+* JVM Vendor URL : https://java.oracle.com/
+
+2022-11-10 05:27:18.681 [http-bio-8080-exec-1] ERROR ChannelImp() - ====> init channel network error, org.fisco.bcos.sdk.network.NetworkException: 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+<==== STEP1-1: Load certificates for ecdsa context success...
+<==== STEP1 Result: try to connect nodes with ecdsa context failed. reason:
+Failed to connect to all the nodes!
+* ssl handshake failed:/127.0.0.1:20200
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+* ssl handshake failed:/127.0.0.1:20201
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+
+----------------------------
+====> STEP2: connect nodes with ecdsa context failed, try to connect nodes with sm-context...
+<==== STEP2 Result: connect with sm context failed for cert missing.
+* Missed certificates: 
+[/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmca.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.crt,]
+currentPath: /home/thuwu/IdeaProjects/demo1
+----------------------------
+<====> Error: try to connect nodes with both ecdsa and sm context failed <====>
+<====>[1;31m Please refer to github issue: https://github.com/FISCO-BCOS/java-sdk/issues/536 [0m
+<====>[1;31m Please refer to fisco-docs: https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/faq/connect.html [0m
+----------------------------
+* FISCO BCOS Java SDK Version: 2.9.1
+* Support secp256k1 : true
+* Java Version : 13
+* JDK Disabled NamedCurves : null
+* JDK DisableNative Option : false
+* OS Name : Linux
+* OS Arch : amd64
+* OS Version : 5.4.0-131-generic
+* JVM Version : 13+33
+* JVM Vendor : Oracle Corporation
+* JVM Vendor URL : https://java.oracle.com/
+
+ 
+2022-11-10 05:27:18.681 [http-bio-8080-exec-1] WARN  ChannelImp() - The channel has already been stopped!
+2022-11-10 05:27:56.573 [http-bio-8080-exec-2] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 05:27:56.574 [http-bio-8080-exec-2] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 05:27:56.574 [http-bio-8080-exec-2] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 05:27:56.574 [http-bio-8080-exec-2] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 05:27:56.575 [http-bio-8080-exec-2] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 05:27:56.670 [nioEventLoopGroup-3-2] ERROR ChannelHandler() -  handshake failed, host: 127.0.0.1, port: 20201, reason: General OpenSslEngine problem, error stack: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem 
+2022-11-10 05:27:56.675 [http-bio-8080-exec-2] ERROR ConnectionManager() - ssl handshake failed:/127.0.0.1:20200
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+2022-11-10 05:27:56.675 [nioEventLoopGroup-3-1] ERROR ChannelHandler() -  handshake failed, host: 127.0.0.1, port: 20200, reason: General OpenSslEngine problem, error stack: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem 
+2022-11-10 05:27:56.675 [http-bio-8080-exec-2] ERROR ConnectionManager() - ssl handshake failed:/127.0.0.1:20201
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+2022-11-10 05:27:56.675 [nioEventLoopGroup-3-2] WARN  DefaultChannelPipeline() - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:471) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.handshakeException(ReferenceCountedOpenSslEngine.java:1737) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.wrap(ReferenceCountedOpenSslEngine.java:777) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:519) ~[?:?]
+	at io.netty.handler.ssl.SslHandler.wrap(SslHandler.java:1071) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.wrapNonAppData(SslHandler.java:962) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1435) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:349) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:158) ~[?:?]
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:84) ~[?:?]
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:309) ~[?:?]
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:344) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+2022-11-10 05:27:56.675 [nioEventLoopGroup-3-2] INFO  ChannelHandler() -  ssl close completion event, host: 127.0.0.1, port: 20201, ctx: 504274325 
+2022-11-10 05:27:56.675 [http-bio-8080-exec-2] ERROR ConnectionManager() -  all connections have failed, [{"code":1, "msg":"ssl handshake failed:/127.0.0.1:20200
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied."}, {"code":1, "msg":"ssl handshake failed:/127.0.0.1:20201
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied."}] 
+2022-11-10 05:27:56.676 [http-bio-8080-exec-2] INFO  NetworkImp() - <==== STEP1 Result: try to connect nodes with ecdsa context failed. reason:
+Failed to connect to all the nodes!
+* ssl handshake failed:/127.0.0.1:20200
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+* ssl handshake failed:/127.0.0.1:20201
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+
+2022-11-10 05:27:56.677 [nioEventLoopGroup-3-1] WARN  DefaultChannelPipeline() - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:471) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.50.Final.jar:4.1.50.Final]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+Caused by: javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.handshakeException(ReferenceCountedOpenSslEngine.java:1737) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.wrap(ReferenceCountedOpenSslEngine.java:777) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at javax.net.ssl.SSLEngine.wrap(SSLEngine.java:519) ~[?:?]
+	at io.netty.handler.ssl.SslHandler.wrap(SslHandler.java:1071) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.wrapNonAppData(SslHandler.java:962) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1435) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:349) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:158) ~[?:?]
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:84) ~[?:?]
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:309) ~[?:?]
+	at sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:344) ~[?:?]
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:258) ~[?:?]
+	at sun.security.validator.Validator.validate(Validator.java:264) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285) ~[?:?]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144) ~[?:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback.verify(ReferenceCountedOpenSslClientContext.java:255) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier.verify(ReferenceCountedOpenSslContext.java:701) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.internal.tcnative.SSL.readFromSSL(Native Method) ~[tcnative-2.0.51.0.jar:?]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.readPlaintextData(ReferenceCountedOpenSslEngine.java:596) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1181) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1298) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1341) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1372) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1279) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1316) ~[netty-handler-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440) ~[netty-codec-4.1.50.Final.jar:4.1.50.Final]
+	... 17 more
+2022-11-10 05:27:56.678 [nioEventLoopGroup-3-1] INFO  ChannelHandler() -  ssl close completion event, host: 127.0.0.1, port: 20200, ctx: 1144037613 
+2022-11-10 05:27:56.678 [http-bio-8080-exec-2] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmca.crt failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:56.680 [http-bio-8080-exec-2] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.crt failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:56.680 [http-bio-8080-exec-2] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.key failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:56.680 [http-bio-8080-exec-2] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.crt failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:56.681 [http-bio-8080-exec-2] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.key failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:58.704 [http-bio-8080-exec-2] INFO  ConnectionManager() - The netty has been stopped
+2022-11-10 05:27:58.704 [http-bio-8080-exec-2] INFO  NetworkImp() - ----------------------------
+====> STEP2: connect nodes with ecdsa context failed, try to connect nodes with sm-context...
+2022-11-10 05:27:58.705 [http-bio-8080-exec-2] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmca.crt failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:58.706 [http-bio-8080-exec-2] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.crt failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:58.706 [http-bio-8080-exec-2] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.key failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:58.707 [http-bio-8080-exec-2] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.crt failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:58.708 [http-bio-8080-exec-2] INFO  ConfigProperty() - Load config from /home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.key failed, trying to load from the resourcePath /home/thuwu/IdeaProjects/demo1/target/classes/
+2022-11-10 05:27:58.708 [http-bio-8080-exec-2] WARN  NetworkImp() - <==== STEP2 Result: connect with sm context failed for cert missing.
+* Missed certificates: 
+[/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmca.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.crt,]
+currentPath: /home/thuwu/IdeaProjects/demo1
+----------------------------
+<====> Error: try to connect nodes with both ecdsa and sm context failed <====>
+<====>[1;31m Please refer to github issue: https://github.com/FISCO-BCOS/java-sdk/issues/536 [0m
+<====>[1;31m Please refer to fisco-docs: https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/faq/connect.html [0m
+----------------------------
+* FISCO BCOS Java SDK Version: 2.9.1
+* Support secp256k1 : true
+* Java Version : 13
+* JDK Disabled NamedCurves : null
+* JDK DisableNative Option : false
+* OS Name : Linux
+* OS Arch : amd64
+* OS Version : 5.4.0-131-generic
+* JVM Version : 13+33
+* JVM Vendor : Oracle Corporation
+* JVM Vendor URL : https://java.oracle.com/
+
+2022-11-10 05:27:58.708 [http-bio-8080-exec-2] ERROR ChannelImp() - ====> init channel network error, org.fisco.bcos.sdk.network.NetworkException: 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+<==== STEP1-1: Load certificates for ecdsa context success...
+<==== STEP1 Result: try to connect nodes with ecdsa context failed. reason:
+Failed to connect to all the nodes!
+* ssl handshake failed:/127.0.0.1:20200
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+* ssl handshake failed:/127.0.0.1:20201
+ reason: General OpenSslEngine problem. Please make sure the certificate are correctly configured and copied.
+
+----------------------------
+====> STEP2: connect nodes with ecdsa context failed, try to connect nodes with sm-context...
+<==== STEP2 Result: connect with sm context failed for cert missing.
+* Missed certificates: 
+[/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmca.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.crt,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmsdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.key,/home/thuwu/IdeaProjects/demo1/target/classes/conf/gm/gmensdk.crt,]
+currentPath: /home/thuwu/IdeaProjects/demo1
+----------------------------
+<====> Error: try to connect nodes with both ecdsa and sm context failed <====>
+<====>[1;31m Please refer to github issue: https://github.com/FISCO-BCOS/java-sdk/issues/536 [0m
+<====>[1;31m Please refer to fisco-docs: https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/faq/connect.html [0m
+----------------------------
+* FISCO BCOS Java SDK Version: 2.9.1
+* Support secp256k1 : true
+* Java Version : 13
+* JDK Disabled NamedCurves : null
+* JDK DisableNative Option : false
+* OS Name : Linux
+* OS Arch : amd64
+* OS Version : 5.4.0-131-generic
+* JVM Version : 13+33
+* JVM Vendor : Oracle Corporation
+* JVM Vendor URL : https://java.oracle.com/
+
+ 
+2022-11-10 05:27:58.708 [http-bio-8080-exec-2] WARN  ChannelImp() - The channel has already been stopped!
+2022-11-10 05:28:19.689 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 05:28:19.811 [http-bio-8080-exec-1] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 05:28:19.812 [http-bio-8080-exec-1] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 05:28:19.812 [http-bio-8080-exec-1] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 05:28:19.837 [http-bio-8080-exec-1] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 05:28:20.192 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20200
+2022-11-10 05:28:20.192 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20201
+2022-11-10 05:28:20.193 [nioEventLoopGroup-2-2] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20201, ctx: 446400997
+2022-11-10 05:28:20.193 [nioEventLoopGroup-2-1] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20200, ctx: 1881175526
+2022-11-10 05:28:20.263 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 05:28:20.263 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":1,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 05:28:20.264 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 05:28:20.264 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 05:28:20.268 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 05:28:20.268 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20201, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 05:28:20.286 [http-bio-8080-exec-1] INFO  ChannelImp() -  Connect to  nodes: 127.0.0.1:20200, 127.0.0.1:20201, 
+2022-11-10 05:28:20.287 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel success, cryptoType: 0
+2022-11-10 05:28:20.292 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel succ, channelProcessorThreadSize: 8, receiptProcessorThreadSize: 8
+2022-11-10 05:28:20.304 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerBlockNumberNotifyHandler
+2022-11-10 05:28:20.306 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerTransactionNotifyHandler
+2022-11-10 05:28:20.331 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create groupManagerService success
+2022-11-10 05:28:21.046 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 05:28:21.051 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 05:28:21.051 [http-bio-8080-exec-1] INFO  AmopImp() - amop module started
+2022-11-10 05:28:21.051 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 05:28:21.052 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create Amop success
+2022-11-10 05:28:21.086 [http-bio-8080-exec-1] INFO  Client() - build client success for group 1, crypto type 0
+2022-11-10 05:28:21.086 [http-bio-8080-exec-1] INFO  BcosSDK() - create client for group 1 success
+2022-11-10 05:28:21.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:28:31.111 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:28:41.111 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:28:51.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:29:01.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:29:11.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:29:21.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:29:31.111 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:29:41.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:29:51.111 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:30:01.111 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:30:09.070 [http-bio-8080-exec-3] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 05:30:09.071 [http-bio-8080-exec-3] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 05:30:09.071 [http-bio-8080-exec-3] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 05:30:09.071 [http-bio-8080-exec-3] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 05:30:09.074 [http-bio-8080-exec-3] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 05:30:09.254 [nioEventLoopGroup-3-2] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20201, ctx: 766417494
+2022-11-10 05:30:09.254 [http-bio-8080-exec-3] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20200
+2022-11-10 05:30:09.254 [nioEventLoopGroup-3-1] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20200, ctx: 437360820
+2022-11-10 05:30:09.254 [http-bio-8080-exec-3] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20201
+2022-11-10 05:30:09.255 [nioEventLoopGroup-3-2] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":2,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 05:30:09.255 [nioEventLoopGroup-3-1] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":3,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 05:30:09.255 [nioEventLoopGroup-3-2] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 05:30:09.255 [nioEventLoopGroup-3-1] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 05:30:09.256 [nioEventLoopGroup-3-2] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20201, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 05:30:09.256 [nioEventLoopGroup-3-1] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 05:30:09.285 [http-bio-8080-exec-3] INFO  ChannelImp() -  Connect to  nodes: 127.0.0.1:20200, 127.0.0.1:20201, 
+2022-11-10 05:30:09.286 [http-bio-8080-exec-3] INFO  BcosSDK() - create BcosSDK, start channel success, cryptoType: 0
+2022-11-10 05:30:09.286 [http-bio-8080-exec-3] INFO  BcosSDK() - create BcosSDK, start channel succ, channelProcessorThreadSize: 8, receiptProcessorThreadSize: 8
+2022-11-10 05:30:09.286 [http-bio-8080-exec-3] INFO  GroupManagerServiceImpl() - registerBlockNumberNotifyHandler
+2022-11-10 05:30:09.287 [http-bio-8080-exec-3] INFO  GroupManagerServiceImpl() - registerTransactionNotifyHandler
+2022-11-10 05:30:09.301 [http-bio-8080-exec-3] INFO  BcosSDK() - create BcosSDK, create groupManagerService success
+2022-11-10 05:30:09.353 [http-bio-8080-exec-3] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 05:30:09.354 [http-bio-8080-exec-3] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 05:30:09.354 [http-bio-8080-exec-3] INFO  AmopImp() - amop module started
+2022-11-10 05:30:09.354 [http-bio-8080-exec-3] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 05:30:09.354 [http-bio-8080-exec-3] INFO  BcosSDK() - create BcosSDK, create Amop success
+2022-11-10 05:30:09.376 [http-bio-8080-exec-3] INFO  Client() - build client success for group 1, crypto type 0
+2022-11-10 05:30:09.376 [http-bio-8080-exec-3] INFO  BcosSDK() - create client for group 1 success
+2022-11-10 05:30:09.382 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:30:11.111 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:30:19.382 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:30:21.111 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:30:29.382 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:30:31.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:30:39.382 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:30:41.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:30:49.382 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:30:51.111 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:30:59.382 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:31:01.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:31:09.383 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:31:11.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:31:19.382 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:31:21.111 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:31:29.382 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:31:31.111 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:31:39.382 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:31:41.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:31:49.382 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:31:51.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:31:59.383 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:32:01.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:32:09.382 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:32:11.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:32:19.382 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:32:21.112 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:33:04.817 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 05:33:04.947 [http-bio-8080-exec-1] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 05:33:04.947 [http-bio-8080-exec-1] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 05:33:04.948 [http-bio-8080-exec-1] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 05:33:04.977 [http-bio-8080-exec-1] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 05:33:05.546 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20200
+2022-11-10 05:33:05.546 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20201
+2022-11-10 05:33:05.548 [nioEventLoopGroup-2-1] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20200, ctx: 279337751
+2022-11-10 05:33:05.548 [nioEventLoopGroup-2-2] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20201, ctx: 1275043776
+2022-11-10 05:33:05.636 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":1,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 05:33:05.637 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 05:33:05.637 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 05:33:05.638 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 05:33:05.650 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 05:33:05.650 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20201, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 05:33:05.677 [http-bio-8080-exec-1] INFO  ChannelImp() -  Connect to  nodes: 127.0.0.1:20200, 127.0.0.1:20201, 
+2022-11-10 05:33:05.678 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel success, cryptoType: 0
+2022-11-10 05:33:05.681 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel succ, channelProcessorThreadSize: 8, receiptProcessorThreadSize: 8
+2022-11-10 05:33:05.694 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerBlockNumberNotifyHandler
+2022-11-10 05:33:05.694 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerTransactionNotifyHandler
+2022-11-10 05:33:05.715 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create groupManagerService success
+2022-11-10 05:33:06.130 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 05:33:06.134 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 05:33:06.134 [http-bio-8080-exec-1] INFO  AmopImp() - amop module started
+2022-11-10 05:33:06.135 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 05:33:06.135 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create Amop success
+2022-11-10 05:33:06.156 [http-bio-8080-exec-1] INFO  Client() - build client success for group 1, crypto type 0
+2022-11-10 05:33:06.157 [http-bio-8080-exec-1] INFO  BcosSDK() - create client for group 1 success
+2022-11-10 05:33:06.175 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:33:08.684 [http-bio-8080-exec-2] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 05:33:08.685 [http-bio-8080-exec-2] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 05:33:08.685 [http-bio-8080-exec-2] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 05:33:08.685 [http-bio-8080-exec-2] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 05:33:08.686 [http-bio-8080-exec-2] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 05:33:08.796 [nioEventLoopGroup-3-2] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20201, ctx: 698398096
+2022-11-10 05:33:08.796 [http-bio-8080-exec-2] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20200
+2022-11-10 05:33:08.796 [nioEventLoopGroup-3-1] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20200, ctx: 1451924483
+2022-11-10 05:33:08.797 [http-bio-8080-exec-2] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20201
+2022-11-10 05:33:08.798 [nioEventLoopGroup-3-2] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":2,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 05:33:08.798 [nioEventLoopGroup-3-2] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 05:33:08.798 [nioEventLoopGroup-3-1] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":3,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 05:33:08.798 [nioEventLoopGroup-3-1] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 05:33:08.799 [nioEventLoopGroup-3-2] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20201, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 05:33:08.799 [nioEventLoopGroup-3-1] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 05:33:08.827 [http-bio-8080-exec-2] INFO  ChannelImp() -  Connect to  nodes: 127.0.0.1:20200, 127.0.0.1:20201, 
+2022-11-10 05:33:08.828 [http-bio-8080-exec-2] INFO  BcosSDK() - create BcosSDK, start channel success, cryptoType: 0
+2022-11-10 05:33:08.828 [http-bio-8080-exec-2] INFO  BcosSDK() - create BcosSDK, start channel succ, channelProcessorThreadSize: 8, receiptProcessorThreadSize: 8
+2022-11-10 05:33:08.829 [http-bio-8080-exec-2] INFO  GroupManagerServiceImpl() - registerBlockNumberNotifyHandler
+2022-11-10 05:33:08.830 [http-bio-8080-exec-2] INFO  GroupManagerServiceImpl() - registerTransactionNotifyHandler
+2022-11-10 05:33:08.838 [http-bio-8080-exec-2] INFO  BcosSDK() - create BcosSDK, create groupManagerService success
+2022-11-10 05:33:08.896 [http-bio-8080-exec-2] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 05:33:08.897 [http-bio-8080-exec-2] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 05:33:08.898 [http-bio-8080-exec-2] INFO  AmopImp() - amop module started
+2022-11-10 05:33:08.898 [http-bio-8080-exec-2] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 05:33:08.899 [http-bio-8080-exec-2] INFO  BcosSDK() - create BcosSDK, create Amop success
+2022-11-10 05:33:08.918 [http-bio-8080-exec-2] INFO  Client() - build client success for group 1, crypto type 0
+2022-11-10 05:33:08.918 [http-bio-8080-exec-2] INFO  BcosSDK() - create client for group 1 success
+2022-11-10 05:33:08.924 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:33:16.176 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:33:18.924 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:33:26.175 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:33:28.925 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:33:36.176 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:33:38.925 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:33:46.175 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:33:48.925 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:33:56.175 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:33:58.925 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:34:06.175 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:34:08.924 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:34:16.175 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:34:18.925 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:34:26.176 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:34:28.925 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:34:36.176 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:34:38.925 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:34:46.176 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:34:48.925 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:34:56.176 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:34:58.924 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:35:06.176 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:35:08.925 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:35:16.176 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:35:18.925 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:35:26.176 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:35:28.924 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:35:36.176 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:35:38.925 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:35:46.175 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:35:48.925 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:35:56.176 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 05:35:58.924 [pool-17-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:01:34.564 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 06:01:34.697 [http-bio-8080-exec-1] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 06:01:34.698 [http-bio-8080-exec-1] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 06:01:34.698 [http-bio-8080-exec-1] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 06:01:34.733 [http-bio-8080-exec-1] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 06:01:35.191 [http-bio-8080-exec-1] ERROR ConnectionManager() - connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+, cause: 拒绝连接: /127.0.0.1:20200
+2022-11-10 06:01:35.192 [http-bio-8080-exec-1] ERROR ConnectionManager() - connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+, cause: 拒绝连接: /127.0.0.1:20201
+2022-11-10 06:01:35.192 [http-bio-8080-exec-1] ERROR ConnectionManager() -  all connections have failed, [{"code":2, "msg":"connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+"}, {"code":2, "msg":"connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+"}] 
+2022-11-10 06:01:35.192 [http-bio-8080-exec-1] WARN  NetworkImp() - <==== connect nodes failed, reason:
+Failed to connect to all the nodes!
+* connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+
+* connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+
+
+2022-11-10 06:01:37.215 [http-bio-8080-exec-1] INFO  ConnectionManager() - The netty has been stopped
+2022-11-10 06:01:37.215 [http-bio-8080-exec-1] ERROR ChannelImp() - ====> init channel network error, org.fisco.bcos.sdk.network.NetworkException: 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+<==== STEP1-1: Load certificates for ecdsa context success...
+<==== connect nodes failed, reason:
+Failed to connect to all the nodes!
+* connect to 127.0.0.1:20200 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20200
+
+* connect to 127.0.0.1:20201 failed! Please make sure the nodes have been started, and the network between the SDK and the nodes are connected normally.reason: 拒绝连接: /127.0.0.1:20201
+
+
+ 
+2022-11-10 06:01:37.215 [http-bio-8080-exec-1] WARN  ChannelImp() - The channel has already been stopped!
+2022-11-10 06:02:02.405 [http-bio-8080-exec-2] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 06:02:02.406 [http-bio-8080-exec-2] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 06:02:02.406 [http-bio-8080-exec-2] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 06:02:02.407 [http-bio-8080-exec-2] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 06:02:02.408 [http-bio-8080-exec-2] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 06:02:02.640 [http-bio-8080-exec-2] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20200
+2022-11-10 06:02:02.640 [http-bio-8080-exec-2] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20201
+2022-11-10 06:02:02.640 [nioEventLoopGroup-3-2] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20201, ctx: 594580270
+2022-11-10 06:02:02.640 [nioEventLoopGroup-3-1] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20200, ctx: 20549326
+2022-11-10 06:02:02.730 [nioEventLoopGroup-3-1] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 06:02:02.730 [nioEventLoopGroup-3-2] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":1,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 06:02:02.731 [nioEventLoopGroup-3-2] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 06:02:02.731 [nioEventLoopGroup-3-1] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 06:02:02.735 [nioEventLoopGroup-3-1] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 06:02:02.735 [nioEventLoopGroup-3-2] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20201, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 06:02:02.738 [http-bio-8080-exec-2] INFO  ChannelImp() -  Connect to  nodes: 127.0.0.1:20201, 
+2022-11-10 06:02:02.744 [http-bio-8080-exec-2] INFO  BcosSDK() - create BcosSDK, start channel success, cryptoType: 0
+2022-11-10 06:02:02.747 [http-bio-8080-exec-2] INFO  BcosSDK() - create BcosSDK, start channel succ, channelProcessorThreadSize: 8, receiptProcessorThreadSize: 8
+2022-11-10 06:02:02.764 [http-bio-8080-exec-2] INFO  GroupManagerServiceImpl() - registerBlockNumberNotifyHandler
+2022-11-10 06:02:02.764 [http-bio-8080-exec-2] INFO  GroupManagerServiceImpl() - registerTransactionNotifyHandler
+2022-11-10 06:02:02.789 [http-bio-8080-exec-2] INFO  BcosSDK() - create BcosSDK, create groupManagerService success
+2022-11-10 06:02:03.319 [http-bio-8080-exec-2] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:02:03.324 [http-bio-8080-exec-2] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:02:03.324 [http-bio-8080-exec-2] INFO  AmopImp() - amop module started
+2022-11-10 06:02:03.325 [http-bio-8080-exec-2] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:02:03.326 [http-bio-8080-exec-2] INFO  BcosSDK() - create BcosSDK, create Amop success
+2022-11-10 06:02:03.349 [http-bio-8080-exec-2] INFO  Client() - build client success for group 1, crypto type 0
+2022-11-10 06:02:03.349 [http-bio-8080-exec-2] INFO  BcosSDK() - create client for group 1 success
+2022-11-10 06:02:03.372 [pool-12-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:02:13.372 [pool-12-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:02:23.371 [pool-12-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:02:40.929 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 06:02:41.040 [http-bio-8080-exec-1] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 06:02:41.041 [http-bio-8080-exec-1] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 06:02:41.042 [http-bio-8080-exec-1] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 06:02:41.067 [http-bio-8080-exec-1] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 06:02:41.451 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20200
+2022-11-10 06:02:41.452 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20201
+2022-11-10 06:02:41.453 [nioEventLoopGroup-2-1] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20200, ctx: 580588689
+2022-11-10 06:02:41.453 [nioEventLoopGroup-2-2] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20201, ctx: 2063785986
+2022-11-10 06:02:41.523 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 06:02:41.523 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":1,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 06:02:41.524 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 06:02:41.524 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 06:02:41.528 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20201, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 06:02:41.528 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 06:02:41.546 [http-bio-8080-exec-1] INFO  ChannelImp() -  Connect to  nodes: 127.0.0.1:20200, 127.0.0.1:20201, 
+2022-11-10 06:02:41.547 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel success, cryptoType: 0
+2022-11-10 06:02:41.550 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel succ, channelProcessorThreadSize: 8, receiptProcessorThreadSize: 8
+2022-11-10 06:02:41.560 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerBlockNumberNotifyHandler
+2022-11-10 06:02:41.560 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerTransactionNotifyHandler
+2022-11-10 06:02:41.583 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create groupManagerService success
+2022-11-10 06:02:42.030 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:02:42.034 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:02:42.035 [http-bio-8080-exec-1] INFO  AmopImp() - amop module started
+2022-11-10 06:02:42.035 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:02:42.035 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create Amop success
+2022-11-10 06:02:42.063 [http-bio-8080-exec-1] INFO  Client() - build client success for group 1, crypto type 0
+2022-11-10 06:02:42.063 [http-bio-8080-exec-1] INFO  BcosSDK() - create client for group 1 success
+2022-11-10 06:02:42.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:02:52.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:03:02.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:03:12.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:03:22.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:03:32.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:03:42.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:03:52.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:04:02.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:04:12.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:04:22.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:04:32.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:04:42.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:04:52.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:05:02.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:05:12.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:05:22.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:05:32.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:05:42.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:05:52.079 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:08:03.945 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 06:08:04.090 [http-bio-8080-exec-1] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 06:08:04.091 [http-bio-8080-exec-1] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 06:08:04.091 [http-bio-8080-exec-1] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 06:08:04.130 [http-bio-8080-exec-1] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 06:08:04.714 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20200
+2022-11-10 06:08:04.714 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20201
+2022-11-10 06:08:04.715 [nioEventLoopGroup-2-1] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20200, ctx: 1367543367
+2022-11-10 06:08:04.716 [nioEventLoopGroup-2-2] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20201, ctx: 1697983455
+2022-11-10 06:08:04.785 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":1,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 06:08:04.785 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 06:08:04.786 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 06:08:04.786 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 06:08:04.791 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 06:08:04.791 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20201, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 06:08:04.810 [http-bio-8080-exec-1] INFO  ChannelImp() -  Connect to  nodes: 127.0.0.1:20200, 127.0.0.1:20201, 
+2022-11-10 06:08:04.814 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel success, cryptoType: 0
+2022-11-10 06:08:04.821 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel succ, channelProcessorThreadSize: 8, receiptProcessorThreadSize: 8
+2022-11-10 06:08:04.854 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerBlockNumberNotifyHandler
+2022-11-10 06:08:04.855 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerTransactionNotifyHandler
+2022-11-10 06:08:04.890 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create groupManagerService success
+2022-11-10 06:08:05.321 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:08:05.325 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:08:05.325 [http-bio-8080-exec-1] INFO  AmopImp() - amop module started
+2022-11-10 06:08:05.326 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:08:05.326 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create Amop success
+2022-11-10 06:08:05.348 [http-bio-8080-exec-1] INFO  Client() - build client success for group 1, crypto type 0
+2022-11-10 06:08:05.348 [http-bio-8080-exec-1] INFO  BcosSDK() - create client for group 1 success
+2022-11-10 06:08:05.366 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:08:15.366 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:08:25.366 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:09:43.561 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 06:09:43.719 [http-bio-8080-exec-1] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 06:09:43.720 [http-bio-8080-exec-1] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 06:09:43.720 [http-bio-8080-exec-1] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 06:09:43.753 [http-bio-8080-exec-1] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 06:09:44.465 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20200
+2022-11-10 06:09:44.465 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20201
+2022-11-10 06:09:44.467 [nioEventLoopGroup-2-1] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20200, ctx: 324476738
+2022-11-10 06:09:44.467 [nioEventLoopGroup-2-2] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20201, ctx: 1344300888
+2022-11-10 06:09:44.563 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":1,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 06:09:44.563 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 06:09:44.564 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 06:09:44.564 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 06:09:44.570 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 06:09:44.570 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20201, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 06:09:44.650 [http-bio-8080-exec-1] INFO  ChannelImp() -  Connect to  nodes: 127.0.0.1:20200, 127.0.0.1:20201, 
+2022-11-10 06:09:44.651 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel success, cryptoType: 0
+2022-11-10 06:09:44.653 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel succ, channelProcessorThreadSize: 8, receiptProcessorThreadSize: 8
+2022-11-10 06:09:44.664 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerBlockNumberNotifyHandler
+2022-11-10 06:09:44.665 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerTransactionNotifyHandler
+2022-11-10 06:09:44.684 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create groupManagerService success
+2022-11-10 06:09:45.103 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:09:45.107 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:09:45.107 [http-bio-8080-exec-1] INFO  AmopImp() - amop module started
+2022-11-10 06:09:45.107 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:09:45.108 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create Amop success
+2022-11-10 06:09:45.128 [http-bio-8080-exec-1] INFO  Client() - build client success for group 1, crypto type 0
+2022-11-10 06:09:45.129 [http-bio-8080-exec-1] INFO  BcosSDK() - create client for group 1 success
+2022-11-10 06:09:45.146 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:09:55.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:10:05.146 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:10:15.146 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:10:25.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:10:35.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:10:45.146 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:10:55.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:11:05.146 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:11:15.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:11:25.146 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:11:35.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:11:45.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:11:55.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:12:05.146 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:12:15.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:12:25.146 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:12:35.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:12:45.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:12:55.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:13:05.146 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:13:15.146 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:13:25.146 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:13:35.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:13:45.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:13:55.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:14:05.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:14:15.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:14:25.147 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:14:40.668 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 06:14:40.791 [http-bio-8080-exec-1] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 06:14:40.791 [http-bio-8080-exec-1] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 06:14:40.792 [http-bio-8080-exec-1] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 06:14:40.820 [http-bio-8080-exec-1] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 06:14:41.198 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20200
+2022-11-10 06:14:41.198 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20201
+2022-11-10 06:14:41.199 [nioEventLoopGroup-2-2] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20201, ctx: 1200343617
+2022-11-10 06:14:41.199 [nioEventLoopGroup-2-1] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20200, ctx: 1946612245
+2022-11-10 06:14:41.261 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 06:14:41.261 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":1,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 06:14:41.262 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 06:14:41.262 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 06:14:41.266 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20201, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 06:14:41.266 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 06:14:41.292 [http-bio-8080-exec-1] INFO  ChannelImp() -  Connect to  nodes: 127.0.0.1:20200, 127.0.0.1:20201, 
+2022-11-10 06:14:41.293 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel success, cryptoType: 0
+2022-11-10 06:14:41.295 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel succ, channelProcessorThreadSize: 8, receiptProcessorThreadSize: 8
+2022-11-10 06:14:41.318 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerBlockNumberNotifyHandler
+2022-11-10 06:14:41.318 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerTransactionNotifyHandler
+2022-11-10 06:14:41.347 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create groupManagerService success
+2022-11-10 06:14:41.775 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:14:41.779 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:14:41.779 [http-bio-8080-exec-1] INFO  AmopImp() - amop module started
+2022-11-10 06:14:41.779 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:14:41.780 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create Amop success
+2022-11-10 06:14:41.802 [http-bio-8080-exec-1] INFO  Client() - build client success for group 1, crypto type 0
+2022-11-10 06:14:41.802 [http-bio-8080-exec-1] INFO  BcosSDK() - create client for group 1 success
+2022-11-10 06:14:41.820 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:14:51.821 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:15:01.820 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:15:11.821 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:15:21.820 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:15:31.821 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:15:41.820 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:16:00.650 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 06:16:00.779 [http-bio-8080-exec-1] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 06:16:00.779 [http-bio-8080-exec-1] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 06:16:00.780 [http-bio-8080-exec-1] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 06:16:00.809 [http-bio-8080-exec-1] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 06:16:01.175 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20200
+2022-11-10 06:16:01.175 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20201
+2022-11-10 06:16:01.176 [nioEventLoopGroup-2-2] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20201, ctx: 1596286194
+2022-11-10 06:16:01.176 [nioEventLoopGroup-2-1] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20200, ctx: 383186724
+2022-11-10 06:16:01.248 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 06:16:01.248 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":1,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 06:16:01.249 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 06:16:01.249 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 06:16:01.254 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 06:16:01.254 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20201, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 06:16:01.274 [http-bio-8080-exec-1] INFO  ChannelImp() -  Connect to  nodes: 127.0.0.1:20200, 127.0.0.1:20201, 
+2022-11-10 06:16:01.275 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel success, cryptoType: 0
+2022-11-10 06:16:01.278 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel succ, channelProcessorThreadSize: 8, receiptProcessorThreadSize: 8
+2022-11-10 06:16:01.290 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerBlockNumberNotifyHandler
+2022-11-10 06:16:01.291 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerTransactionNotifyHandler
+2022-11-10 06:16:01.310 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create groupManagerService success
+2022-11-10 06:16:01.724 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:16:01.728 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:16:01.728 [http-bio-8080-exec-1] INFO  AmopImp() - amop module started
+2022-11-10 06:16:01.729 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:16:01.729 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create Amop success
+2022-11-10 06:16:01.751 [http-bio-8080-exec-1] INFO  Client() - build client success for group 1, crypto type 0
+2022-11-10 06:16:01.752 [http-bio-8080-exec-1] INFO  BcosSDK() - create client for group 1 success
+2022-11-10 06:16:01.770 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:16:11.770 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:16:21.770 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:16:31.770 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:16:41.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:16:51.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:17:01.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:17:11.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:17:21.770 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:17:31.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:17:41.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:17:51.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:18:01.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:18:11.770 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:18:21.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:18:31.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:18:41.770 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:18:51.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:19:01.770 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:19:11.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:19:21.770 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:19:31.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:19:41.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:19:51.770 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:20:01.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:20:11.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:20:21.771 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:20:37.862 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, configPath: /home/thuwu/IdeaProjects/demo1/target/classes/applicationContext.toml
+2022-11-10 06:20:37.995 [http-bio-8080-exec-1] INFO  ConnectionManager() -  all connections, size: 2, list: [ConnectionInfo{host='127.0.0.1', port=20200}, ConnectionInfo{host='127.0.0.1', port=20201}]
+2022-11-10 06:20:37.995 [http-bio-8080-exec-1] INFO  NetworkImp() - 
+* TRACE INFORMATION:
+----------------------------
+====> STEP1: try to connect nodes with ecdsa context...
+
+2022-11-10 06:20:37.995 [http-bio-8080-exec-1] INFO  NetworkImp() - ====> <==== STEP1-1: Load certificates for ecdsa context success..., start connManager with ECDSA sslContext
+2022-11-10 06:20:38.024 [http-bio-8080-exec-1] INFO  ConnectionManager() -  build ECDSA ssl context with configured certificates 
+2022-11-10 06:20:38.416 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20200
+2022-11-10 06:20:38.417 [http-bio-8080-exec-1] INFO  ConnectionManager() -  ssl handshake success 127.0.0.1:20201
+2022-11-10 06:20:38.417 [nioEventLoopGroup-2-2] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20201, ctx: 1943811848
+2022-11-10 06:20:38.417 [nioEventLoopGroup-2-1] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20200, ctx: 1776161535
+2022-11-10 06:20:38.494 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 06:20:38.495 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  node: ClientVersion{version='2.9.1', supportedVersion='2.9.1', chainId='1', buildTime='20220922 08:57:35', buildType='Linux/g++/Release', gitBranch='HEAD', gitCommitHash='83a87ad749475c0edcc6d5ce2dabd328a36d3bae'}, content: {"id":1,"jsonrpc":"2.0","result":{"Build Time":"20220922 08:57:35","Build Type":"Linux/g++/Release","Chain Id":"1","FISCO-BCOS Version":"2.9.1","Git Branch":"HEAD","Git Commit Hash":"83a87ad749475c0edcc6d5ce2dabd328a36d3bae","Supported Version":"2.9.1"}}
+
+2022-11-10 06:20:38.496 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 06:20:38.496 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  support channel handshake node
+2022-11-10 06:20:38.500 [nioEventLoopGroup-2-2] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20201, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 06:20:38.500 [nioEventLoopGroup-2-1] INFO  ChannelImp() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.9.1, EnumProtocol=VERSION_3]
+2022-11-10 06:20:38.511 [http-bio-8080-exec-1] INFO  ChannelImp() -  Connect to  nodes: 127.0.0.1:20200, 127.0.0.1:20201, 
+2022-11-10 06:20:38.512 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel success, cryptoType: 0
+2022-11-10 06:20:38.514 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, start channel succ, channelProcessorThreadSize: 8, receiptProcessorThreadSize: 8
+2022-11-10 06:20:38.526 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerBlockNumberNotifyHandler
+2022-11-10 06:20:38.527 [http-bio-8080-exec-1] INFO  GroupManagerServiceImpl() - registerTransactionNotifyHandler
+2022-11-10 06:20:38.550 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create groupManagerService success
+2022-11-10 06:20:38.976 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:20:38.980 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:20:38.980 [http-bio-8080-exec-1] INFO  AmopImp() - amop module started
+2022-11-10 06:20:38.980 [http-bio-8080-exec-1] INFO  AmopImp() - update subscribe inform 2 peers
+2022-11-10 06:20:38.980 [http-bio-8080-exec-1] INFO  BcosSDK() - create BcosSDK, create Amop success
+2022-11-10 06:20:39.001 [http-bio-8080-exec-1] INFO  Client() - build client success for group 1, crypto type 0
+2022-11-10 06:20:39.002 [http-bio-8080-exec-1] INFO  BcosSDK() - create client for group 1 success
+2022-11-10 06:20:39.018 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:20:49.019 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:20:59.019 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:21:09.019 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:21:19.019 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:21:29.018 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:21:39.018 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:21:49.019 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+2022-11-10 06:21:59.018 [pool-9-thread-1] INFO  EventSubscribeImp() - Resend waiting filters, size: 0
+                                                                                                      
