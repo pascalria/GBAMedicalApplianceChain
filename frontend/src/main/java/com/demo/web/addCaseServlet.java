@@ -61,11 +61,11 @@ public class addCaseServlet extends HttpServlet {
         byte[] signHash = EncryptDSAUtil.DSASign(privateKey,sha256Str);
 
         //调用智能合约
-        StroeHashClient stroeHashClient = new StroeHashClient();
-        stroeHashClient.initialize();
+        StoreHashClient storeHashClient = new StoreHashClient();
+        storeHashClient.initialize();
         //上链
         int caseId = c.getCaseId();
-        stroeHashClient.StoreHashIn(caseId,signHash);
+        storeHashClient.StoreHashIn(caseId,signHash);
 
 
         resp.getWriter().write("success");
