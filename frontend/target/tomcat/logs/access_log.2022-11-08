@@ -1,0 +1,4 @@
+127.0.0.1 - - [08/Nov/2022:16:16:57 +0800] "GET /demo1 HTTP/1.1" 302 - http-bio-8080-exec-1 0
+127.0.0.1 - - [08/Nov/2022:16:16:57 +0800] "GET /demo1/ HTTP/1.1" 200 52 http-bio-8080-exec-2 366
+127.0.0.1 - - [08/Nov/2022:16:16:57 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
+127.0.0.1 - - [08/Nov/2022:16:17:03 +0800] "GET /demo1/selectAllServlet HTTP/1.1" 200 - http-bio-8080-exec-5 2966

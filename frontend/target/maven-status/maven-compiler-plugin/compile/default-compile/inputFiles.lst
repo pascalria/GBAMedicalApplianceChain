@@ -1,0 +1,12 @@
+/home/thuwu/IdeaProjects/demo1/src/main/java/com/demo/web/addCaseServlet.java
+/home/thuwu/IdeaProjects/demo1/src/main/java/com/demo/mapper/CaseMapper.java
+/home/thuwu/IdeaProjects/demo1/src/main/java/com/demo/util/SqlSessionFactoryUtils.java
+/home/thuwu/IdeaProjects/demo1/src/main/java/com/demo/util/Proper.java
+/home/thuwu/IdeaProjects/demo1/src/main/java/com/demo/chain/contract/HelloWorld.java
+/home/thuwu/IdeaProjects/demo1/src/main/java/com/demo/web/SelectAllServlet.java
+/home/thuwu/IdeaProjects/demo1/src/main/java/com/demo/pojo/Patient.java
+/home/thuwu/IdeaProjects/demo1/src/main/java/com/demo/service/PatientService.java
+/home/thuwu/IdeaProjects/demo1/src/main/java/com/demo/pojo/Case.java
+/home/thuwu/IdeaProjects/demo1/src/main/java/com/demo/service/CaseService.java
+/home/thuwu/IdeaProjects/demo1/src/main/java/com/demo/mapper/PatientMapper.java
+/home/thuwu/IdeaProjects/demo1/src/main/java/com/demo/chain/client/HelloWorldClient.java
