@@ -27,7 +27,7 @@
 各地的医疗机构申请加入联盟链，每家医疗机构均持有公私钥对(PK,SK)。由CA（卫健委）颁发的CA数字证书作为医疗机构的链上的身份认证凭证。CA 数字证书包含了该证书拥有者的身份、签名、有效期等。不同CA数字证书拥有者的身份在链上操作的权限也不同。对“港澳药械通”的药械有需求的患者在各地医疗机构就诊时通过客户端注册得到身份序号，即id。
 患者就诊后在当地医疗机构处下载个人电子健康记录(Electronic Health Record,EHR)或电子病历（Electronic Medical Record, EMR）（如图 2所示）等检查凭证后，委托当地医疗机构将其资料哈希运算生成摘要并签名后上链。然后用5家指定的医疗机构中的任意一家的公钥加密后点对点传输，将患病情况（或需要某种药械）告知给指定医疗机构。同时指定医疗机构能够对比哈希值进行可信验真。
  
- <img src="https://github.com/pascalria/GBAMedicalApplianceChain/blob/main/img/2.png" width="%25" height="%25" />
+ <img src="https://github.com/pascalria/GBAMedicalApplianceChain/blob/main/img/2.jpg" width="%25" height="%25" />
 图 2电子病历示意图
 综上所述，患者数据验证运行过程如图 3所示：
 
