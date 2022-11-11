@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.util.Properties;
 
-public class StroeHashClient {
+public class StoreHashClient {
     // 获取配置文件路径
     public final String configFile = StroeHashClient.class.getClassLoader().getResource("applicationContext.toml").getPath();
     private BcosSDK bcosSDK;
@@ -29,7 +29,7 @@ public class StroeHashClient {
     private Properties properties;
     private TransactionCallback transactionCallback;
 
-    public StroeHashClient() {
+    public StoreHashClient() {
         bcosSDK = BcosSDK.build(configFile);
         // 为群组1初始化client
         client = bcosSDK.getClient(Integer.valueOf(1));
