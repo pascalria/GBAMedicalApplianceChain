@@ -1,24 +1,75 @@
-CREATE TABLE hospital(
-patient_id char(8) PRIMARY KEY COMMENT '患者id，为8位数字',
-hospital_addr BINARY(160) COMMENT '医院账户地址，以二进制存储'
-);
+/*
+ Navicat Premium Data Transfer
 
-CREATE TABLE medical(
-medid char(4) NOT NULL COMMENT '药械id',
-remain_time tinyint NOT NULL COMMENT '如不为0，则代表离特定时间点得时间',
-patient_id CHAR(8) COMMENT '患者id，为8位数字',
-FOREIGN KEY (patient_id) REFERENCES hospital(patient_id)
-);
+ Source Server         : mysql
+ Source Server Type    : MySQL
+ Source Server Version : 50736
+ Source Host           : localhost:3306
+ Source Schema         : demo
 
-INSERT INTO hospitaldb.hospital VALUES ('20220102','1101010101001111110110101011101010000100111101000111001011111101010101101101011001011110110010011101101000110101111110000100011100010000111001111100100010000000');
-INSERT INTO hospitaldb.medical VALUES ('28','02','20220102'); 
+ Target Server Type    : MySQL
+ Target Server Version : 50736
+ File Encoding         : 65001
 
-CREATE SCHEMA hospitaldb;
+ Date: 11/11/2022 15:16:26
+*/
 
-SELECT patient_id FROM hospital;
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
 
-SELECT hospital.patient_id,hospital_addr
-FROM hospital,medical
-WHERE hospital.patient_id=medical.patient_id
-AND medid = '01'
-AND remain_time = '0';
+-- ----------------------------
+-- Table structure for tb_case
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_case`;
+CREATE TABLE `tb_case`  (
+  `caseId` int(8) NOT NULL AUTO_INCREMENT,
+  `patientId` int(8) NOT NULL,
+  `medicalNeed` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `createData` date NOT NULL,
+  PRIMARY KEY (`caseId`) USING BTREE,
+  INDEX `fk_case_patient`(`patientId`) USING BTREE,
+  CONSTRAINT `fk_case_patient` FOREIGN KEY (`patientId`) REFERENCES `tb_patient` (`patientId`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE = InnoDB AUTO_INCREMENT = 8 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tb_case
+-- ----------------------------
+INSERT INTO `tb_case` VALUES (1, 2, '111', '2022-11-10');
+INSERT INTO `tb_case` VALUES (7, 3, '12;23;4', '2022-11-10');
+
+-- ----------------------------
+-- Table structure for tb_medical
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_medical`;
+CREATE TABLE `tb_medical`  (
+  `medicalId` int(4) NOT NULL,
+  `medicalName` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  PRIMARY KEY (`medicalId`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tb_medical
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for tb_patient
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_patient`;
+CREATE TABLE `tb_patient`  (
+  `patientId` int(8) NOT NULL AUTO_INCREMENT,
+  `patientName` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`patientId`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tb_patient
+-- ----------------------------
+INSERT INTO `tb_patient` VALUES (2, '戴頴璇');
+INSERT INTO `tb_patient` VALUES (3, '邵慧珊');
+INSERT INTO `tb_patient` VALUES (4, '邓杰宏');
+INSERT INTO `tb_patient` VALUES (5, '薛致远');
+INSERT INTO `tb_patient` VALUES (6, '石晓明');
+INSERT INTO `tb_patient` VALUES (7, '朱慧敏');
+INSERT INTO `tb_patient` VALUES (8, '郭心穎');
+
+SET FOREIGN_KEY_CHECKS = 1;
